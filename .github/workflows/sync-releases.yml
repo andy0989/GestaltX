@@ -15,6 +15,7 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       UPSTREAM: huamidev/GestaltX
     steps:
+    - uses: actions/checkout@v4
       - name: Mirror all upstream releases
         run: |
           set -e
